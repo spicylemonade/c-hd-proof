@@ -1,0 +1,3 @@
+# Keep every file byte-for-byte: the package is verified against PACKAGE_SHA256SUMS.txt,
+# so git must never rewrite line endings on checkout.
+* -text

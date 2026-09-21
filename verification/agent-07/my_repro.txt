@@ -1,0 +1,23 @@
+{
+ "tag": "final1",
+ "build_ok": true,
+ "seconds": 3203.8,
+ "files": 288,
+ "forbidden_hits": 0,
+ "info_hits": 47,
+ "probes": [
+  "Frontier.CHD.Final:Frontier.CHD.Final.chd_gateC",
+  "Frontier.CHD.Final:Frontier.CHD.Final.chd_CHDTarget",
+  "Frontier.CHD.Final:Frontier.CHD.Final.chd_exact_within"
+ ]
+}
+
+== Frontier.CHD.Final:Frontier.CHD.Final.chd_gateC
+'Frontier.CHD.Final.chd_gateC' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+== Frontier.CHD.Final:Frontier.CHD.Final.chd_CHDTarget
+'Frontier.CHD.Final.chd_CHDTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+== Frontier.CHD.Final:Frontier.CHD.Final.chd_exact_within
+'Frontier.CHD.Final.chd_exact_within' depends on axioms: [propext, Classical.choice, Quot.sound]
+

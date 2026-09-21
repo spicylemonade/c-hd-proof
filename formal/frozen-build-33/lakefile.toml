@@ -1,0 +1,10 @@
+name = "frontierformal"
+version = "0.1.0"
+defaultTargets = ["Frontier"]
+
+[[lean_lib]]
+name = "Frontier"
+
+[[require]]
+name = "mathlib"
+path = "/opt/lean-mathlib"

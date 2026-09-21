@@ -1,0 +1,30 @@
+Frontier.CHD.Final.chd_gateC : Frontier.GateC
+Frontier.CHD.Final.chd_CHDTarget : Frontier.GateCTarget.CHDTarget Frontier.GateCCalc.F
+Frontier.CHD.Final.chd_exact_within : Frontier.CHD.Final.chdProgram.Exact ∧
+  ∀ (G : Frontier.Graph) (s : Fin G.n),
+    Frontier.CHD.Final.chdProgram.RunsWithin G s
+      ((Frontier.CHD.L6.bodyC Frontier.CHD.Final.KcC + 65536 * 9 + 100) *
+        Frontier.GateCTarget.Tdisp Frontier.GateCCalc.F G.n G.m)
+def Frontier.GateC : Prop :=
+∃ P,
+  P.Exact ∧
+    ∃ T,
+      (∀ (G : Frontier.Graph) (s : Fin G.n), P.RunsWithin G s (T G.n G.m)) ∧
+        ∃ μ,
+          (∀ᶠ (n : ℕ) in Filter.atTop, ↑n * √(Real.log (↑n + 2)) ≤ ↑(μ n) ∧ ↑(μ n) ≤ ↑n * Real.log (↑n + 2)) ∧
+            Filter.Tendsto (fun n => T n (μ n) / (↑n * Real.log (↑n + 2))) Filter.atTop (nhds 0)
+def Frontier.GateCTarget.CHDTarget : (ℕ → ℕ) → Prop :=
+fun F =>
+  ∃ P, P.Exact ∧ ∃ C, ∀ (G : Frontier.Graph) (s : Fin G.n), P.RunsWithin G s (C * Frontier.GateCTarget.Tdisp F G.n G.m)
+def Frontier.GateCTarget.Tdisp : (ℕ → ℕ) → ℕ → ℕ → ℝ :=
+fun F n m => if m ≤ n * F n then Frontier.GateCCalc.Tchd n m else (↑n + 1) * (↑m + 1)
+def Frontier.GateCCalc.F : ℕ → ℕ :=
+fun n => (Nat.log 2 n ^ 3).sqrt.sqrt
+def Frontier.RAM.Program.Exact : Frontier.RAM.Program → Prop :=
+fun P => ∀ (G : Frontier.Graph) (s : Fin G.n), ∃ fuel r, P.run fuel G s = some r ∧ r.Solves G s
+def Frontier.RAM.Program.RunsWithin : Frontier.RAM.Program → (G : Frontier.Graph) → Fin G.n → ℝ → Prop :=
+fun P G s T => ∃ fuel r, P.run fuel G s = some r ∧ ↑r.cost ≤ T
+'Frontier.CHD.Final.chd_gateC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Frontier.CHD.Final.chd_CHDTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Frontier.CHD.Final.chdProgram' does not depend on any axioms
+'Frontier.AuditGateC.chdTarget_imp_auditGateC' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,9 @@
+{
+  "checked_at": 1789948565.9962306,
+  "rc": 0,
+  "stdout": "'Frontier.CHD.Final.chd_gateC' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Frontier.CHD.Final.chd_CHDTarget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Frontier.CHD.Final.chd_exact_within' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Frontier.CHD.Final.chdProgram' does not depend on any axioms\n",
+  "stderr": "",
+  "audited_closure_count": 266,
+  "forbidden_hits": [],
+  "audit_ok": true
+}

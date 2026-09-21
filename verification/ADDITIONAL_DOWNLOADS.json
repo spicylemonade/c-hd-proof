@@ -1,0 +1,37 @@
+[
+  {
+    "source": "/research/agents/agent-09/work/replay/Replay.lean",
+    "file": "formal/Replay.lean",
+    "sha256": "83fe209613ce35d316a1dce7e3c77e8589dbb6a4189bb1c8e52c9128bafcdba8"
+  },
+  {
+    "source": "/research/agents/agent-07/work/repro/Replay07.lean",
+    "file": "verification/original-tools/agent-07/Replay07.lean",
+    "sha256": "fb9583646667760032da920d7664c2577c17679f4dbc5f4efe546062ac14b4f3"
+  },
+  {
+    "source": "/research/agents/agent-07/work/repro/my_repro.py",
+    "file": "verification/original-tools/agent-07/my_repro.py",
+    "sha256": "ccee786496bc33276582b1a8691bdf4a39849089ccdc049b9f4e8621a8db8461"
+  },
+  {
+    "source": "/research/agents/agent-07/work/repro/program_probe.sh",
+    "file": "verification/original-tools/agent-07/program_probe.sh",
+    "sha256": "5b3b332f84253af906df82a55b842c2bc5e033b4d4e78797c86aa44abdd02282"
+  },
+  {
+    "source": "/research/agents/agent-07/work/repro/stmt/PrintStmt.lean",
+    "file": "verification/original-tools/agent-07/stmt/PrintStmt.lean",
+    "sha256": "8311006f88ee247353c6355072d985af62d46236fb0e1009357c9010507d7f4b"
+  },
+  {
+    "source": "/research/agents/agent-07/work/repro/stmt/stmt_1230.txt",
+    "file": "verification/original-tools/agent-07/stmt/stmt_1230.txt",
+    "sha256": "2b44cd75378e827ee0d212edb9f2589c017a343024df6b8efed36e621480ceee"
+  },
+  {
+    "source": "/research/background/PRIOR_B1_UNVERIFIED_DRAFT.md",
+    "file": "paper/background/PRIOR_B1_UNVERIFIED_DRAFT.md",
+    "sha256": "684dbf28e1c73c4735a54277ea588828623ce71abd8f12abca0b0918f6ad6942"
+  }
+]

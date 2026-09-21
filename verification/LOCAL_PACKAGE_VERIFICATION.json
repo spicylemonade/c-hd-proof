@@ -1,0 +1,69 @@
+{
+  "checked_utc": "2026-09-21T00:03:05.657344+00:00",
+  "sandbox_exit_code": null,
+  "left_running": true,
+  "snapshot_baseline": "frozen build 33",
+  "frozen_manifest_entries": 292,
+  "lean_source_files": 289,
+  "portable_source_identity_verified": true,
+  "portable_config_files_changed": [
+    "lakefile.toml",
+    "lake-manifest.json"
+  ],
+  "portable_build_on_this_mac_performed": false,
+  "remote_status": {
+    "phase": "running",
+    "agents": [
+      {
+        "agent_id": "agent-01",
+        "status": "exited_requires_review",
+        "returncode": 0
+      },
+      {
+        "agent_id": "agent-02",
+        "status": "active_research",
+        "returncode": null
+      },
+      {
+        "agent_id": "agent-03",
+        "status": "active_research",
+        "returncode": null
+      },
+      {
+        "agent_id": "agent-04",
+        "status": "active_research",
+        "returncode": null
+      },
+      {
+        "agent_id": "agent-05",
+        "status": "exited_requires_review",
+        "returncode": 0
+      },
+      {
+        "agent_id": "agent-06",
+        "status": "exited_requires_review",
+        "returncode": 0
+      },
+      {
+        "agent_id": "agent-07",
+        "status": "active_research",
+        "returncode": null
+      },
+      {
+        "agent_id": "agent-08",
+        "status": "active_research",
+        "returncode": null
+      },
+      {
+        "agent_id": "agent-09",
+        "status": "active_research",
+        "returncode": null
+      },
+      {
+        "agent_id": "agent-10",
+        "status": "active_research",
+        "returncode": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+soft /research/lean/Frontier/CHD/BL2StepD.lean:125: syntax "" : tactic
+soft /research/lean/Frontier/CHD/RamBodyPro.lean:86: macro "" : tactic => `(tactic| (intro a ha; simp (config := { failIfUnchanged := false }) only
+soft /research/lean/Frontier/CHD/SpinePostProof.lean:468: macro "" : tactic => `(tactic| (intro a ha; simp only [List.mem_append, List.mem_cons,
+files=266 HARD=0 soft=3

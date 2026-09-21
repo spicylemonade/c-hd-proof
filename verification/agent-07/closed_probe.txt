@@ -1,0 +1,3 @@
+'Frontier.CHD.Final.chd_gateC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Frontier.CHD.Final.chd_CHDTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+CLOSED: final theorems have exactly the frozen types (rc 0)
